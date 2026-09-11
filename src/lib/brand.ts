@@ -15,8 +15,7 @@ export const BRAND = {
   postalCode: "400050",
   country: "India",
   hours: "Mon – Sun · 11:00 AM – 8:30 PM",
-  mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Ridham+Couture+Linking+Road+Bandra+West+Mumbai",
+  mapsUrl: "https://maps.app.goo.gl/2pvbzWtF87QGPb1dA",
 } as const;
 
 export const WHATSAPP_URL = `https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(
