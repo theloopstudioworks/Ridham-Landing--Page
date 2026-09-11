@@ -1,11 +1,45 @@
-import { Instagram, MapPin, Phone, MessageCircle } from "lucide-react";
+import { Instagram, MapPin, Phone } from "lucide-react";
 import { BRAND, TEL_URL, WHATSAPP_URL } from "@/lib/brand";
+
+function WhatsAppIcon({
+  className,
+  strokeWidth = 1.8,
+}: {
+  className?: string;
+  strokeWidth?: number;
+}) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="12" cy="12" r="8.75" stroke="currentColor" strokeWidth={strokeWidth} />
+      <path
+        d="M8.8 8.9c.2-.35.4-.37.65-.37h.35c.13 0 .28.05.35.25l.5 1.22c.08.2.05.35-.08.5l-.38.48c-.12.14-.1.3-.03.43.18.34.48.8.98 1.28.52.5.96.77 1.3.94.14.07.3.08.42-.05l.48-.53c.13-.15.3-.18.5-.1l1.17.55c.2.1.25.23.22.43-.04.27-.18.8-.55 1.03-.3.2-.72.28-1.13.18-.45-.1-1.5-.52-2.6-1.52-.9-.8-1.5-1.75-1.68-2.08-.18-.32-.48-1-.48-1.6 0-.6.3-.9.43-1.01Z"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m7.15 17.2-.55 2.05 2.1-.52"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 const ACTIONS = [
   {
     label: "WhatsApp",
     href: WHATSAPP_URL,
-    Icon: MessageCircle,
+    Icon: WhatsAppIcon,
     primary: true,
     aria: "Message Ridham Couture on WhatsApp",
   },
