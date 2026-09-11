@@ -80,7 +80,7 @@ export function FloatingCTA() {
             aria-label={aria}
             className={`group flex h-11 items-center justify-end overflow-hidden rounded-full border pr-[0.85rem] pl-[0.85rem] shadow-[0_6px_24px_-14px_rgba(60,45,25,0.45)] transition-[width,background-color] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               primary
-                ? "border-transparent bg-accent text-foreground"
+                ? "border-transparent bg-[#25D366] text-white hover:bg-[#1ebe5d]"
                 : "border-border bg-secondary text-foreground hover:bg-accent"
             } w-11 hover:w-[9.75rem]`}
           >
@@ -105,7 +105,7 @@ export function FloatingCTA() {
             rel="noreferrer noopener"
             aria-label={aria}
             className={`flex min-h-[3.75rem] flex-col items-center justify-center gap-1.5 ${
-              primary ? "bg-accent text-foreground" : "bg-secondary text-foreground"
+              primary ? "bg-[#25D366] text-white" : "bg-secondary text-foreground"
             }`}
           >
             <Icon className="h-[1.05rem] w-[1.05rem]" strokeWidth={1.4} />
