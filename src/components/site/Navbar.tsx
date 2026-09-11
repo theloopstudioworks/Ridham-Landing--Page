@@ -63,6 +63,13 @@ export function Navbar() {
           ))}
         </nav>
 
+        <a
+          href="#collections"
+          className={`btn-base hidden justify-self-end px-5 py-2.5 lg:order-3 lg:block ${scrolled ? "btn-solid" : "btn-light"}`}
+        >
+          Shop Now
+        </a>
+
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
@@ -93,6 +100,13 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href="#collections"
+            onClick={() => setOpen(false)}
+            className="mt-4 block border border-border bg-foreground px-5 py-3 text-center text-xs font-medium tracking-[0.18em] text-background uppercase"
+          >
+            Shop Now
+          </a>
         </nav>
       )}
     </header>

@@ -1,20 +1,20 @@
 export const BRAND = {
   name: "Ridham Couture",
   // TODO: replace the placeholder contact details below with the real ones.
-  phoneDisplay: "+91 98765 43210",
-  phoneRaw: "+919876543210",
-  whatsapp: "919876543210",
+  phoneDisplay: "+91 9045454256",
+  phoneRaw: "+919045454256",
+  whatsapp: "919045454256",
   whatsappMessage:
     "Hello Ridham Couture, I'd like to know more about your collection.",
   instagramHandle: "@ridhamcouture_",
   instagramUrl: "https://www.instagram.com/ridhamcouture_/",
-  addressLine1: "Ridham Couture, 12 Linking Road",
-  addressLine2: "Bandra West",
-  city: "Mumbai",
-  region: "Maharashtra",
-  postalCode: "400050",
+  addressLine1: "41-42, Rajpur Rd, opposite Universal Petrol pump",
+  addressLine2: "Patel Market, Chukkuwala",
+  city: "Dehradun",
+  region: "Uttarakhand",
+  postalCode: "248001",
   country: "India",
-  hours: "Mon – Sun · 11:00 AM – 8:30 PM",
+  hours: "Every day · 11:00 AM – 9:00 PM",
   mapsUrl: "https://maps.app.goo.gl/2pvbzWtF87QGPb1dA",
 } as const;
 
