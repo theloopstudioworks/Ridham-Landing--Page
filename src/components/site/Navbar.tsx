@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Instagram, MapPin, Phone, Menu, X } from "lucide-react";
-import { BRAND, TEL_URL, WHATSAPP_URL } from "@/lib/brand";
+import { Menu, X } from "lucide-react";
 
 const LINKS = [
   { label: "Collections", href: "#collections" },
@@ -63,42 +62,6 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden items-center gap-5 justify-self-end lg:order-3 lg:flex">
-          <a
-            href={BRAND.instagramUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Ridham Couture on Instagram"
-            className="opacity-85 transition-opacity hover:opacity-100"
-          >
-            <Instagram className="h-[1.05rem] w-[1.05rem]" strokeWidth={1.4} />
-          </a>
-          <a
-            href={BRAND.mapsUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Find the Ridham Couture store"
-            className="opacity-85 transition-opacity hover:opacity-100"
-          >
-            <MapPin className="h-[1.05rem] w-[1.05rem]" strokeWidth={1.4} />
-          </a>
-          <a
-            href={TEL_URL}
-            aria-label={`Call Ridham Couture on ${BRAND.phoneDisplay}`}
-            className="opacity-85 transition-opacity hover:opacity-100"
-          >
-            <Phone className="h-[1.05rem] w-[1.05rem]" strokeWidth={1.4} />
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noreferrer noopener"
-            className={`btn-base px-5 py-2.5 ${scrolled ? "btn-solid" : "btn-light"}`}
-          >
-            WhatsApp
-          </a>
-        </div>
 
         <button
           type="button"
