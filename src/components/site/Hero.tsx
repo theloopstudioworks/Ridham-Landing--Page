@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/riddham img/RC (23).png";
 import { WHATSAPP_URL } from "@/lib/brand";
 
 export function Hero() {
@@ -27,8 +27,8 @@ export function Hero() {
         <img
           src={heroImg}
           alt="Model wearing a hand-embroidered contemporary Indian occasion-wear ensemble by Ridham Couture"
-          width={1920}
-          height={1280}
+          width={5040}
+          height={3360}
           fetchPriority="high"
           className="h-full w-full object-cover object-[62%_center]"
         />
