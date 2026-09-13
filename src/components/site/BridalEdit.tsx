@@ -1,4 +1,4 @@
-import bridalImg from "@/assets/bridal-edit.jpg";
+import bridalImg from "@/assets/bridal-edit-banner.png";
 import { WHATSAPP_URL } from "@/lib/brand";
 
 export function BridalEdit() {
