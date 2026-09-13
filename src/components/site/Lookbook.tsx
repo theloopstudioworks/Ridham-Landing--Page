@@ -1,7 +1,7 @@
-import look1 from "@/assets/look-1.jpg";
-import look2 from "@/assets/look-2.jpg";
-import look3 from "@/assets/look-3.jpg";
-import look4 from "@/assets/look-4.jpg";
+import look1 from "@/assets/riddham img/7.png";
+import look2 from "@/assets/riddham img/12.png";
+import look3 from "@/assets/riddham img/8.png";
+import look4 from "@/assets/riddham img/10.png";
 import { BRAND } from "@/lib/brand";
 
 export function Lookbook() {

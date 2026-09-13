@@ -1,6 +1,6 @@
-import craft1 from "@/assets/craft-1.jpg";
-import craft2 from "@/assets/craft-2.jpg";
-import craft3 from "@/assets/craft-3.jpg";
+import craft1 from "@/assets/riddham img/7.png";
+import craft2 from "@/assets/riddham img/10.png";
+import craft3 from "@/assets/riddham img/11.png";
 
 const ITEMS = [
   {

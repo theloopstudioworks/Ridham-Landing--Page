@@ -1,4 +1,4 @@
-import introImg from "@/assets/intro.jpg";
+import introImg from "@/assets/riddham img/1.png";
 
 export function BrandIntro() {
   return (

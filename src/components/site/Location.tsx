@@ -1,4 +1,4 @@
-import storeImg from "@/assets/store.jpg";
+import storeImg from "@/assets/riddham img/12.png";
 import { BRAND, TEL_URL } from "@/lib/brand";
 
 export function Location() {

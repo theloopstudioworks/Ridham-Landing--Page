@@ -1,10 +1,10 @@
 import { Instagram } from "lucide-react";
-import look4 from "@/assets/look-4.jpg";
-import look1 from "@/assets/look-1.jpg";
-import coord from "@/assets/cat-coord.jpg";
-import saree from "@/assets/cat-saree.jpg";
-import occasion from "@/assets/cat-occasion.jpg";
-import craft1 from "@/assets/craft-1.jpg";
+import look4 from "@/assets/riddham img/10.png";
+import look1 from "@/assets/riddham img/7.png";
+import coord from "@/assets/riddham img/5.png";
+import saree from "@/assets/riddham img/9.png";
+import occasion from "@/assets/riddham img/3.png";
+import craft1 from "@/assets/riddham img/2.png";
 import { BRAND } from "@/lib/brand";
 
 const GRID = [

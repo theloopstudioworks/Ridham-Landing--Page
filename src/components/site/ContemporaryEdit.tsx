@@ -1,5 +1,5 @@
-import contemporary from "@/assets/contemporary.jpg";
-import coord from "@/assets/cat-coord.jpg";
+import contemporary from "@/assets/riddham img/2.png";
+import coord from "@/assets/riddham img/5.png";
 import { WHATSAPP_URL } from "@/lib/brand";
 
 export function ContemporaryEdit() {
@@ -9,13 +9,13 @@ export function ContemporaryEdit() {
       className="mx-auto max-w-[1440px] px-5 py-24 md:px-10 lg:py-36"
     >
       <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20">
-        <div className="grid grid-cols-2 gap-4 lg:gap-6">
+        <div className="grid grid-cols-2 gap-4 pt-4 lg:gap-6 lg:pt-8">
           <div className="media-zoom reveal aspect-[4/5]">
             <img
               src={contemporary}
               alt="Model in an embroidered jacket and draped skirt, a contemporary Indo-Western look"
-              width={1200}
-              height={1500}
+              width={1260}
+              height={1600}
               loading="lazy"
             />
           </div>

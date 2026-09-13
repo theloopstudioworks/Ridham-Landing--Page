@@ -1,10 +1,10 @@
-import bridal from "@/assets/cat-bridal.jpg";
-import lehenga from "@/assets/cat-lehenga.jpg";
-import saree from "@/assets/cat-saree.jpg";
-import suits from "@/assets/cat-suits.jpg";
-import indo from "@/assets/cat-indowestern.jpg";
-import coord from "@/assets/cat-coord.jpg";
-import occasion from "@/assets/cat-occasion.jpg";
+import bridal from "@/assets/riddham img/11.png";
+import lehenga from "@/assets/riddham img/12.png";
+import saree from "@/assets/riddham img/9.png";
+import suits from "@/assets/riddham img/6.png";
+import indo from "@/assets/riddham img/4.png";
+import coord from "@/assets/riddham img/5.png";
+import occasion from "@/assets/riddham img/3.png";
 import { WHATSAPP_URL } from "@/lib/brand";
 
 type Item = {
@@ -118,6 +118,7 @@ export function Collections() {
                   width={1024}
                   height={1400}
                   loading="lazy"
+                  className="object-top"
                 />
               </div>
               <h3 className="display-md mt-7">{item.name}</h3>

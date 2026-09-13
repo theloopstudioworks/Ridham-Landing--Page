@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import heroImg from "@/assets/riddham img/RC (23).png";
 import { WHATSAPP_URL } from "@/lib/brand";
+
+const heroImg =
+  "https://res.cloudinary.com/doudcr0tg/image/upload/v1789295300/RC_23_1_w1s8w9.png";
 
 export function Hero() {
   const [y, setY] = useState(0);
@@ -22,7 +24,7 @@ export function Hero() {
     <section id="top" className="relative h-[100svh] min-h-[600px] overflow-hidden">
       <div
         className="absolute inset-0 will-change-transform"
-        style={{ transform: `translate3d(0, ${y * 0.18}px, 0) scale(1.08)` }}
+        style={{ transform: `translate3d(0, ${y * 0.18}px, 0) scale(1.02)` }}
       >
         <img
           src={heroImg}
@@ -30,7 +32,7 @@ export function Hero() {
           width={5040}
           height={3360}
           fetchPriority="high"
-          className="h-full w-full object-cover object-[62%_center]"
+          className="h-full w-full object-cover object-[42%_15%]"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
