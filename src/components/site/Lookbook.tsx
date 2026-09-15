@@ -1,7 +1,6 @@
-import look1 from "@/assets/riddham img/7.png";
-import look2 from "@/assets/riddham img/12.png";
-import look3 from "@/assets/riddham img/8.png";
-import look4 from "@/assets/riddham img/10.png";
+import look1 from "@/assets/riddham img/14.png";
+import look2 from "@/assets/riddham img/15.png";
+import look3 from "@/assets/riddham img/16.png";
 import { BRAND } from "@/lib/brand";
 
 export function Lookbook() {
@@ -31,7 +30,7 @@ export function Lookbook() {
           <figure className="media-zoom reveal aspect-[3/4] md:col-span-5">
             <img
               src={look1}
-              alt="Back detail of an embroidered bridal blouse and lehenga"
+              alt="Ridham Couture lookbook image"
               width={1000}
               height={1300}
               loading="lazy"
@@ -39,8 +38,8 @@ export function Lookbook() {
           </figure>
           <figure className="media-zoom reveal aspect-[3/4] md:col-span-4 md:mt-20">
             <img
-              src={look3}
-              alt="Model in a contemporary fusion co-ord set seated indoors"
+              src={look2}
+              alt="Ridham Couture lookbook image"
               width={1000}
               height={1300}
               loading="lazy"
@@ -48,19 +47,10 @@ export function Lookbook() {
           </figure>
           <figure className="media-zoom reveal aspect-[3/4] md:col-span-3 md:mt-40">
             <img
-              src={look4}
-              alt="Close portrait with statement earrings and an embroidered saree"
+              src={look3}
+              alt="Ridham Couture lookbook image"
               width={1000}
               height={1300}
-              loading="lazy"
-            />
-          </figure>
-          <figure className="media-zoom reveal aspect-[16/10] md:col-span-9 md:col-start-3">
-            <img
-              src={look2}
-              alt="Two models in coordinated festive Indian ensembles"
-              width={1400}
-              height={1000}
               loading="lazy"
             />
           </figure>
