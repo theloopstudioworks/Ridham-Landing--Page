@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/riddham img/RC - 1 (1).png";
 
 const LINKS = [
   { label: "Collections", href: "#collections" },
@@ -41,13 +40,12 @@ export function Navbar() {
           className="min-w-0 lg:order-2 lg:justify-self-center"
           aria-label="Ridham Couture home"
         >
-          <img
-            src={logo}
-            alt="Ridham Couture"
-            width={160}
-            height={64}
-            className="h-14 w-auto object-contain sm:h-16"
-          />
+          <span className="block text-center font-display text-lg leading-none font-normal tracking-[0.16em] sm:text-xl">
+            RIDHAM
+          </span>
+          <span className="mt-1 block text-center text-[0.55rem] tracking-[0.42em] opacity-80">
+            COUTURE
+          </span>
         </a>
 
         <nav
