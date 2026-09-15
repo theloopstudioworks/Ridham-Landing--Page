@@ -46,7 +46,7 @@ export function Navbar() {
             alt="Ridham Couture"
             width={160}
             height={64}
-            className="h-10 w-auto object-contain sm:h-12"
+            className="h-14 w-auto object-contain sm:h-16"
           />
         </a>
 
