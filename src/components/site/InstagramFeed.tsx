@@ -41,7 +41,7 @@ const TESTIMONIALS = [
 
 export function InstagramFeed() {
   const [testimonials, setTestimonials] = useState(TESTIMONIALS);
-  const activeTestimonial = testimonials[0];
+  const activeTestimonial = testimonials[0]!;
   const stackedTestimonials = testimonials.slice(1);
 
   const handleTestimonialClick = (index: number) => {
@@ -69,7 +69,6 @@ export function InstagramFeed() {
 
       <div className="mt-12 grid gap-5 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
         <article
-          key={activeTestimonial.name}
           className="reveal overflow-hidden rounded-[2rem] border border-border/70 bg-card/80 shadow-[0_30px_90px_rgba(20,20,20,0.06)] transition-all duration-500 ease-out animate-[fadeInUp_450ms_ease-out]"
         >
           <div className="grid gap-0 md:grid-cols-[1.1fr_1fr]">
