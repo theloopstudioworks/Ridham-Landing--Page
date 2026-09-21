@@ -6,20 +6,20 @@ import saree from "@/assets/riddham img/9.png";
 
 const TESTIMONIALS = [
   {
-    name: "Priya & Arjun",
-    event: "Wedding couture",
+    name: "Akshita S.",
+    event: "Indo-western look",
     img: look4,
     alt: "Bride in floral embroidery bridal couture",
     quote:
-      "The finishing was impeccable and every detail felt deeply personal.",
+      "It's a newly opened store with an amazing Indo-western collection. Some beautiful range of co-ords, lehengas, sarees, and gowns. Must Visit.",
   },
   {
-    name: "Rhea Sharma",
+    name: "Avantika Jindal",
     event: "Festive edit",
     img: coord,
     alt: "Client in a contemporary embroidered co-ord set",
     quote:
-      "Elegant, statement-making, and effortless — exactly the mood I wanted.",
+      "They have a very vast and unique collection and the owner is very sweet and welcoming. I had a great experience and would definitely recommend them.",
   },
   {
     name: "Meher Kapoor",
@@ -115,23 +115,15 @@ export function InstagramFeed() {
         </article>
 
         <div className="space-y-5">
-          {stackedTestimonials.map((testimonial, index) => {
-            const isSelected = testimonial === testimonials[0];
-
-            return (
+          {stackedTestimonials.map((testimonial, index) => (
               <button
                 key={testimonial.name}
                 type="button"
                 onClick={() => handleTestimonialClick(index)}
-                className={`reveal w-full cursor-pointer overflow-hidden rounded-[1.75rem] border p-5 text-left shadow-[0_20px_60px_rgba(20,20,20,0.04)] transition-all duration-300 ease-out ${
-                  isSelected
-                    ? "scale-[1.01] border-[#d9b777]/50 bg-[#f9f5ef] shadow-[0_28px_80px_rgba(20,20,20,0.10)]"
-                    : "border-border/70 bg-card/70 hover:-translate-y-0.5 hover:border-foreground/20 hover:bg-card hover:shadow-[0_24px_70px_rgba(20,20,20,0.08)]"
-                } ${index > 0 ? "translate-y-[-2px]" : ""}`}
-                aria-pressed={isSelected}
+                className="w-full cursor-pointer overflow-hidden rounded-[1.75rem] border border-border/70 bg-card/70 p-5 text-left shadow-[0_20px_60px_rgba(20,20,20,0.04)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-foreground/20 hover:bg-card hover:shadow-[0_24px_70px_rgba(20,20,20,0.08)]"
+                aria-label={`Show testimonial from ${testimonial.name}`}
                 style={{
                   marginTop: index === 0 ? 0 : "-0.1rem",
-                  transform: isSelected ? "translateY(-1px) scale(1.01)" : undefined,
                 }}
               >
                 <div className="flex items-center gap-3">
@@ -154,8 +146,7 @@ export function InstagramFeed() {
                   “{testimonial.quote}”
                 </p>
               </button>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
