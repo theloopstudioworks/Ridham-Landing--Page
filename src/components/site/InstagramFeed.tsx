@@ -88,7 +88,7 @@ export function InstagramFeed() {
                     {activeTestimonial.event}
                   </p>
                 </div>
-                <p className="text-3xl font-medium italic leading-[1.12] text-foreground md:text-[2.1rem] lg:text-[2.4rem]">
+                <p className="font-poppins text-2xl leading-[1.25] font-normal text-foreground md:text-[1.8rem] lg:text-[2rem]">
                   “{activeTestimonial.quote}”
                 </p>
               </div>
