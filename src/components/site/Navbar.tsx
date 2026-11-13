@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
+import { BRAND, TEL_URL } from "@/lib/brand";
 
 const LINKS = [
   { label: "Collections", href: "#collections" },
@@ -48,10 +49,7 @@ export function Navbar() {
           </span>
         </a>
 
-        <nav
-          aria-label="Primary"
-          className="hidden lg:order-1 lg:flex lg:items-center lg:gap-8"
-        >
+        <nav aria-label="Primary" className="hidden lg:order-1 lg:flex lg:items-center lg:gap-8">
           {LINKS.map((l) => (
             <a
               key={l.label}
@@ -63,26 +61,45 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a
-          href="#collections"
-          className={`btn-base hidden justify-self-end px-5 py-2.5 lg:order-3 lg:block ${scrolled ? "btn-solid" : "btn-light"}`}
-        >
-          Shop Now
-        </a>
+        <div className="hidden items-center gap-6 justify-self-end lg:order-3 lg:flex">
+          <a
+            href={TEL_URL}
+            aria-label={`Call Ridham Couture at ${BRAND.phoneDisplay}`}
+            className="flex items-center gap-2 text-[0.688rem] font-medium tracking-[0.18em] opacity-85 transition-opacity duration-300 hover:opacity-100"
+          >
+            <Phone className="h-3.5 w-3.5" strokeWidth={1.6} />
+            {BRAND.phoneDisplay}
+          </a>
+          <a
+            href="#collections"
+            className={`btn-base px-5 py-2.5 ${scrolled ? "btn-solid" : "btn-light"}`}
+          >
+            Shop Now
+          </a>
+        </div>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-label={open ? "Close menu" : "Open menu"}
-          className="shrink-0 justify-self-end p-1 lg:hidden"
-        >
-          {open ? (
-            <X className="h-5 w-5" strokeWidth={1.4} />
-          ) : (
-            <Menu className="h-5 w-5" strokeWidth={1.4} />
-          )}
-        </button>
+        <div className="flex shrink-0 items-center gap-4 justify-self-end lg:hidden">
+          <a
+            href={TEL_URL}
+            aria-label={`Call Ridham Couture at ${BRAND.phoneDisplay}`}
+            className="p-1"
+          >
+            <Phone className="h-5 w-5" strokeWidth={1.4} />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="p-1"
+          >
+            {open ? (
+              <X className="h-5 w-5" strokeWidth={1.4} />
+            ) : (
+              <Menu className="h-5 w-5" strokeWidth={1.4} />
+            )}
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -100,6 +117,14 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
+          <a
+            href={TEL_URL}
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-3 border-b border-border/60 py-4 text-base text-foreground"
+          >
+            <Phone className="h-4 w-4" strokeWidth={1.5} />
+            {BRAND.phoneDisplay}
+          </a>
           <a
             href="#collections"
             onClick={() => setOpen(false)}
